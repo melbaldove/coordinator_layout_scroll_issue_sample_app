@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heyyou.myapplication.coordinator.coordinatordetail.CoordinatorDetailView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ImageView
+    android:id="@+id/coordinatordetail_rib_back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="40dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
+</com.heyyou.myapplication.coordinator.coordinatordetail.CoordinatorDetailView>

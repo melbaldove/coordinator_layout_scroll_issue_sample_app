@@ -1,0 +1,237 @@
+ext {
+    // Android Framework
+    supportVersion = "28.0.0"
+    supportv4Version = "1.0.0"
+    fragmentVersion = "1.1.0-alpha09"
+    appcompatVersion = "1.1.0-alpha01"
+    recyclerViewVersion = "1.1.0-alpha01"
+    cardViewVersion = "1.0.0"
+    materialVersion = "1.2.1"
+    browserVersion = "1.0.0"
+    paletteVersion = "1.0.0"
+    mediaRouterVersion = "1.1.0-alpha01"
+    multidexVersion = "2.0.0"
+    constraintLayoutVersion = "2.0.0-alpha2"
+
+    // UI
+    recyclerViewAnimatorsVersion = "2.2.0"
+    slidingUpPanelVersion = "3.3.1"
+    materialLoadingProgressBarVersion = "0.5.8-RELEASE"
+    targetTooltipVersion = "1.3.15"
+    simpleTooltipVersion = "0.2.2"
+    materialDialogsVersion = "2.0.0-rc3"
+    epoxyVersion = "4.0.0-beta6"
+    swipeLayoutVersion = "1.2.0@aar"
+
+    // ReactiveX
+    rxJavaVersion = "2.2.4"
+    rxAndroidVersion = "2.1.0"
+    rxKotlinVersion = "2.2.0"
+    rxBindingVersion = "2.2.0"
+    rxRelayVersion = "2.1.0"
+
+    // Dagger2 (DI Framework)
+    daggerVersion = "2.16"
+
+    // Play Services
+    gmsLocationVersion = "16.0.0"
+    gmsMapsVersion = "16.0.0"
+    gmsAdsVersion = "17.1.2"
+    gmsAdsIdentifierVersion = "16.0.0"
+    gmsAuthVersion = "16.0.1"
+    gmsPlusVersion = "16.0.0"
+    gmsAnalyticsVersion = "16.0.8"
+    gmsVisionVersion = "17.0.2"
+    gmsPlacesVersion = "1.1.0"
+    gmsWalletVersion = "16.0.0"
+
+    // Firebase
+    firebaseCoreVersion = "16.0.9"
+    firebaseMessagingVersion = "17.6.0"
+    firebaseRemoteConfigVersion = "16.5.0"
+    firebaseIidVersion = "17.1.2"
+
+    // Image Loading
+    glideVersion = "4.8.0"
+
+    // Photo cropper
+    photoCropperVersion = "2.8.+"
+
+    // Facebook
+    facebookSdkVersion = "[5,6)"
+
+    // Twitter
+    tweetComposerVersion = "0.7.3@aar"
+
+    // Cache
+    activeAndroidVersion = "3.1.0-SNAPSHOT"
+    paperDbVersion = "2.6"
+
+    // Networking
+    okHttpVersion = "3.11.0"
+    volleyVersion = "1.1.0"
+    retrofitVersion = "2.5.0"
+
+    // Logging
+    timberVersion = "4.7.1"
+
+    // Payment
+    paypalVersion = "2.15.1"
+    zipVersion = "1.0.1"
+
+    // Analytics
+    gimbalVersion = "4.2.2"
+    urbanairshipVersion = "9.7.1"
+    urbanairshipGimbalAdapterVersion = "2.2.0"
+    usabillaVersion = "6.2.0"
+    installReferrerVersion = "1.0"
+    appsFlyerVersion = "4+@aar"
+    crashlyticsVersion = "17.1.0"
+    firebaseAnalyticsVersion = "17.4.3"
+
+    // RIBs
+    ribVersion = "0.9.1"
+
+    // Misc
+    gsonVersion = "2.8.5"
+    androidMapsUtilsVersion = "0.4.2"
+    javaxInjectVersion = '1'
+    jodaTimeVersion = "2.10.1"
+    commonsCodecVersion = "1.10"
+    codeScannerVersion = "2.0.1"
+    lottieVersion = "3.0.0"
+    libPhoneNumberVersion = "8.10.7"
+    cloudinaryVersion = "1.26.0"
+
+    libraries = [
+            // Android Framework
+            kotlin                    : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+            supportv4                 : "androidx.legacy:legacy-support-v4:$supportv4Version",
+            appcompatv7               : "androidx.appcompat:appcompat:$appcompatVersion",
+            recyclerView              : "androidx.recyclerview:recyclerview:$recyclerViewVersion",
+            cardView                  : "androidx.cardview:cardview:$cardViewVersion",
+            material                  : "com.google.android.material:material:$materialVersion",
+            browser                   : "androidx.browser:browser:$browserVersion",
+            palette                   : "androidx.palette:palette:$paletteVersion",
+            mediaRouter               : "androidx.mediarouter:mediarouter:$mediaRouterVersion",
+            multidex                  : "androidx.multidex:multidex:$multidexVersion",
+            constraintLayout          : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            fragment                  : "androidx.fragment:fragment:$fragmentVersion",
+
+            // UI
+            recyclerviewAnimators     : "jp.wasabeef:recyclerview-animators:$recyclerViewAnimatorsVersion",
+            slidingUpPanel            : "com.sothree.slidinguppanel:library:$slidingUpPanelVersion",
+            materialLoadingProgressBar: "com.lsjwzh:materialloadingprogressbar:$materialLoadingProgressBarVersion",
+            targetTooltip             : "it.sephiroth.android.library.targettooltip:target-tooltip-library:$targetTooltipVersion",
+            simpleTooltip             : "com.github.douglasjunior:android-simple-tooltip:$simpleTooltipVersion",
+            materialDialogs           : "com.afollestad.material-dialogs:core:$materialDialogsVersion",
+            epoxy                     : "com.airbnb.android:epoxy:$epoxyVersion",
+            epoxyProcessor            : "com.airbnb.android:epoxy-processor:$epoxyVersion",
+            swipeLayout               : "com.daimajia.swipelayout:library:$swipeLayoutVersion",
+
+            // ReactiveX
+            rxJava                    : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+            rxAndroid                 : "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
+            rxKotlin                  : "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion",
+            rxBinding                 : "com.jakewharton.rxbinding2:rxbinding:$rxBindingVersion",
+            rxRelay                   : "com.jakewharton.rxrelay2:rxrelay:$rxRelayVersion",
+
+            // Dagger2 (DI Framework)
+            dagger                    : "com.google.dagger:dagger:$daggerVersion",
+            daggerAndroid             : "com.google.dagger:dagger-android:$daggerVersion",
+            daggerAndroidSupport      : "com.google.dagger:dagger-android-support:$daggerVersion",
+            daggerAndroidProcessor    : "com.google.dagger:dagger-android-processor:$daggerVersion",
+            daggerCompiler            : "com.google.dagger:dagger-compiler:$daggerVersion",
+
+            // Play Services
+            gmsLocation               : "com.google.android.gms:play-services-location:$gmsLocationVersion",
+            gmsMaps                   : "com.google.android.gms:play-services-maps:$gmsMapsVersion",
+            gmsAds                    : "com.google.android.gms:play-services-ads:$gmsAdsVersion",
+            gmsAdsIdentifier          : "com.google.android.gms:play-services-ads-identifier:$gmsAdsIdentifierVersion",
+            gmsAuth                   : "com.google.android.gms:play-services-auth:$gmsAuthVersion",
+            gmsPlus                   : "com.google.android.gms:play-services-plus:$gmsPlusVersion",
+            gmsAnalytics              : "com.google.android.gms:play-services-analytics:$gmsAnalyticsVersion",
+            gmsVision                 : "com.google.android.gms:play-services-vision:$gmsVisionVersion",
+            gmsPlaces                 : "com.google.android.libraries.places:places:$gmsPlacesVersion",
+            gmsWallet                 : "com.google.android.gms:play-services-wallet:$gmsWalletVersion",
+
+            // Firebase
+            firebaseCore              : "com.google.firebase:firebase-core:$firebaseCoreVersion",
+            firebaseMessaging         : "com.google.firebase:firebase-messaging:$firebaseMessagingVersion",
+            firebaseRemoteConfig      : "com.google.firebase:firebase-config:$firebaseRemoteConfigVersion",
+            firebaseIid               : "com.google.firebase:firebase-iid:$firebaseIidVersion",
+
+            // ImageLoading
+            glide                     : "com.github.bumptech.glide:glide:$glideVersion",
+            glideCompiler             : "com.github.bumptech.glide:compiler:$glideVersion",
+
+            // Photo Cropper
+            photoCropper              : "com.theartofdev.edmodo:android-image-cropper:$photoCropperVersion",
+
+            // Facebook
+            fbLogin                   : "com.facebook.android:facebook-login:$facebookSdkVersion",
+            fbAppLinks                : "com.facebook.android:facebook-applinks:$facebookSdkVersion",
+
+            // Twitter
+            tweetComposer             : "com.twitter.sdk.android:tweet-composer:$tweetComposerVersion",
+
+            // Cache
+            activeAndroid             : "com.michaelpardo:activeandroid:$activeAndroidVersion",
+            paperDb                   : "io.paperdb:paperdb:$paperDbVersion",
+
+            // Networking
+            okHttp                    : "com.squareup.okhttp3:okhttp:$okHttpVersion",
+            okHttpUrlConnection       : "com.squareup.okhttp3:okhttp-urlconnection:$okHttpVersion",  // this is to be deprecated
+            volley                    : "com.android.volley:volley:$volleyVersion",  // this is to be deprecated
+            retrofit                  : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitAdapterRxJava     : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            retrofitConverterGson     : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            loggingInterceptor        : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
+
+            // Logging
+            timber                    : "com.jakewharton.timber:timber:$timberVersion",
+
+            // Payment
+            paypal                    : "com.paypal.sdk:paypal-android-sdk:$paypalVersion",
+            zip                       : "co.zip.android:zip-android-sdk:$zipVersion",
+
+            // Analytics
+            gimbal                    : "com.gimbal.android.v4:gimbal-sdk:$gimbalVersion",
+            gimbalSlf4jImpl           : "com.gimbal.android.v4:gimbal-slf4j-impl:$gimbalVersion",
+            urbanairshipFcm           : "com.urbanairship.android:urbanairship-fcm:$urbanairshipVersion",
+            urbanairshipGimbalAdapter : "com.urbanairship.android:gimbal-adapter:$urbanairshipGimbalAdapterVersion",
+            usabilla                  : "com.usabilla.sdk:ubform:$usabillaVersion",
+            installReferrer           : "com.android.installreferrer:installreferrer:$installReferrerVersion",
+            appsflyer                 : "com.appsflyer:af-android-sdk:$appsFlyerVersion",
+            crashlytics               : "com.google.firebase:firebase-crashlytics:$crashlyticsVersion",
+            firebaseAnalytics         : "com.google.firebase:firebase-analytics:$firebaseAnalyticsVersion",
+
+            // RIBs
+            rib                       : "com.uber.rib:rib-android:$ribVersion",
+            ribWorkflow               : "com.uber.rib:rib-workflow:$ribVersion",
+            ribTest                   : "com.uber.rib:rib-test-utils:$ribVersion",
+            ribCompiler               : "com.uber.rib:rib-compiler-test:$ribVersion",
+
+            // Misc
+            gson                      : "com.google.code.gson:gson:$gsonVersion",
+            androidMapsUtils          : "com.google.maps.android:android-maps-utils:$androidMapsUtilsVersion",
+            merge                     : "com.commonsware.cwac:merge:1.1.2",
+            photoCrop                 : "com.albinmathew:photo-crop-library:1.0.3",
+            javaxInject               : "javax.inject:javax.inject:$javaxInjectVersion",
+            jodaTime                  : "joda-time:joda-time:$jodaTimeVersion",
+            commonsCodec              : "commons-codec:commons-codec:$commonsCodecVersion",
+            codeScanner               : "com.budiyev.android:code-scanner:$codeScannerVersion",
+            lottie                    : "com.airbnb.android:lottie:$lottieVersion",
+            libPhoneNumber            : "io.michaelrocks:libphonenumber-android:$libPhoneNumberVersion",
+            cloudinary                : "com.cloudinary:cloudinary-android:$cloudinaryVersion"
+
+    ]
+
+    junitVersion = "4.12"
+    espressoVersion = "3.1.1-alpha01"
+
+    testLibraries = [
+            junit   : "junit:junit:$junitVersion",
+            espresso: "androidx.test.espresso:espresso-core:$espressoVersion"
+    ]
+}

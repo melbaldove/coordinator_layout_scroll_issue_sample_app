@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heyyou.myapplication.coordinator.CoordinatorView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+
+    tools:visibility="visible">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/venuemenu_rib_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/venuemenu_rib_collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            android:fitsSystemWindows="true"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:statusBarScrim="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/venuemenu_rib_coverImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:background="@color/colorPrimaryDark"
+                app:layout_collapseMode="parallax"
+                app:layout_scrollFlags="scroll" />
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/venuemenu_rib_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll">
+
+
+                <ImageView
+                    android:id="@+id/venuemenu_rib_info"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_goneMarginEnd="12dp"
+                    android:src="@color/colorAccent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/venuemenu_rib_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:elevation="0dp"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</com.heyyou.myapplication.coordinator.CoordinatorView>
